@@ -9,7 +9,116 @@ body {
 body {
     background-color: #e5eeee;
     font-family: 'Quicksand', sans-serif;
+    padding-top: 52px;
 }
 .ba-container {
+    width: 400px;
+    height: 530px;
+    background: url("../assets/vector-smart-object.png") no-repeat, linear-gradient(32deg, rgba(48, 35, 174,0.8) 0%, rgba(200, 109, 215, 0.8) 100% );
+    margin: 0 auto;
+}
+.ba-header-content {
+    padding-top: 52px;
+    padding-left: 71px;
+    margin-bottom:0;
+}
+.ba-main-content {
+    width: 261px;
+    height: 290px;
+    margin: 0 auto;
+}
+.ba-navigation__h-link {
+    text-decoration: none;
+    color: #e1c2f1;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 26px;
+    margin-bottom: 50px;
+}
+.ba-navigation__h-link:hover {
+    color: #fbf6e4;
+    border-bottom: 2px solid #e66a64;
+}
+.ba-form-content {
+    margin-top: 50px;
+}
+.ba-form__label {
+    width: 80px;
+    height: 12px;
+    color: #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+}
+.ba-form__input {
+    width: 261px;
+    height: 42px;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    background-color: rgba(229, 238, 238, 0);
+    margin: 11px 0 18px 0;
+}
+/* Скрываем реальный чекбокс */
+.ba-form__checkbox {
+    display: none;
+}
+/* Задаем внешний вид для кастомного чекбокса.*/
+.ba-form__checkbox--custom {
+    position: relative;      /* задаем, чтобы абсолютным образом позиционировать псевдоэлемент внютри кастомного чекбокса*/
+    width: 16px;             /* задаем ширину */
+    height: 16px;            /* задаем высоту */
+    background: #23ae92;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали.
+Если это не требуется, то можно убрать свойство
+vertical-align: middle, но свойство display: inline-block
+обязательно должно быть */
+.ba-form__checkbox--custom,
+.ba-checkbox__label {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Если реальный чекбокс отмечен, то добавляем данный признак и к кастомному чекбоксу  */
+.ba-form__checkbox:checked + .ba-form__checkbox--custom::before {
+    content: "";             /* Добавляем псевдоэлемент */
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
 
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 5px;
+    right: 2px;
+    bottom: 2px;
+    left: 3px;
+
+    background: url("../assets/check.svg") no-repeat;     /* Добавляем фон. Если требуется, можно поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+}
+.ba-checkbox__text {
+    width: 119px;
+    height: 13px;
+    color: #fbf6e4;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 41px;
+}
+.ba-form__button {
+    width: 261px;
+    height: 42px;
+    background-color: #23ae92;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    margin-top: 41px;
+
+}
+.ba-footer-navigation {
+    margin-top: 33px;
+    padding-left: 71px;
+}
+.ba-navigation__f-link {
+    text-decoration: none;
+    color: #b9b9cc;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 3px;
+    margin-right: 33px;
+    border-bottom: 1px solid rgba(150, 193, 218, 0.15);;
 }

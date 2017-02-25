@@ -9,7 +9,34 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 <body>
     <div class="ba-container">
-
+        <header class="ba-header-content">
+            <nav class="ba-header-navigation">
+                <a class="ba-navigation__h-link" href="#">Sign in</a>
+                <a class="ba-navigation__h-link" href="#">Join us</a>
+            </nav>
+        </header>
+        <main class="ba-main-content">
+            <form action="" class="ba-form-content">
+                <label for="username" class="ba-form__label">Username
+                    <input id="username" type="text" class="ba-form__input">
+                </label>
+                <label for="password" class="ba-form__label">Password
+                    <input id="password" type="password" class="ba-form__input">
+                </label>
+                <label for="checkbox" class="ba-checkbox__label">
+                    <input id="checkbox" class="ba-form__checkbox" type="checkbox" checked>
+                    <span class="ba-form__checkbox--custom"></span>
+                    <span class="ba-checkbox__text">Keep me signed in</span>
+                </label>
+                <button class="ba-form__button" type="submit">Sign in</button>
+            </form>
+        </main>
+        <footer>
+            <nav class="ba-footer-navigation">
+                <a class="ba-navigation__f-link" href="#">Forgot password</a>
+                <a class="ba-navigation__f-link" href="#">Create an account</a>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>
