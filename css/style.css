@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+html,
+body {
+    min-height: 100%;
+}
+body {
+    background-color: #e5eeee;
+    font-family: 'Quicksand', sans-serif;
+}
+.ba-container {
+
+}
